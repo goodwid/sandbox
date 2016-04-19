@@ -1,18 +1,18 @@
 
+things = [];
+
+function Thing (opt) {
+  this.name = opt.name;
+  this.type = opt.type;
+  this.age = opt.age;
+}
 
 $('input').on('click', snagData);
 
 function snagData() {
-  $.getJSON('js/item.json', displayData, true);
+  $.getJSON('js/item.json', function (data) {
+    data.forEach(function (i){
+      things.push(new Thing(i));
+    });
+  });
 }
-
-function displayData(data) {
-  data.forEach(function (thing){
-    console.log(thing.name);
-    console.log(thing.type);
-    console.log(thing.age);
-
-  })
-}
-
-$('input').click();
