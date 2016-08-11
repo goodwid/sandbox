@@ -9,10 +9,11 @@
   "author": "David Goodwin",
   "license": "MIT",
   "dependencies": {
+    "formatter.js": "^0.1.5",
     "gulp": "^3.9.0",
-    "gulp-sass": "^2.2.0",
     "gulp-jshint": "^2.0.0",
     "gulp-mocha": "^2.2.0",
+    "gulp-sass": "^2.2.0",
     "jshint": "^2.9.1",
     "mocha": "^2.3.4",
     "nodemon": "^1.8.1"
